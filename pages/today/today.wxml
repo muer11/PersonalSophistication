@@ -1,0 +1,43 @@
+<!--pages/today/today.wxml-->
+<view class="today">
+<view class="section">
+  <picker mode="date" value="{{date}}" start="2018-01-01" bindchange="bindDateChange">
+    <view class="picker">
+      当日: {{date}}
+    </view>
+  </picker>
+</view>
+<view>
+  今日清单：
+  <checkbox-group bindchange="checkboxChange">
+    <view wx:for="{{items}}">
+      <label class="checkbox">
+        {{item.value}}
+        <checkbox value="{{item.name}}" checked="{{item.checked}}"/>
+      </label>
+    </view>
+  </checkbox-group>
+  <button type="default">+ 添加一条今日清单</button>
+</view>
+<view>
+  小习惯：
+  <checkbox-group bindchange="checkboxChange">
+    <view wx:for="{{items}}">
+      <label class="checkbox">
+        <checkbox value="{{item.name}}" checked="{{item.checked}}"/>
+        {{item.value}}
+      </label>
+    </view>
+  </checkbox-group>
+  <button type="default">+ 添加一条小习惯</button>
+</view>
+<view>
+  反思日记：
+  <view class="section" wx:for="{{types}}">
+    <textarea placeholder="{{item.value}}" focus="{{focus}}" value="{{item.value}}:"/>
+    <view class="btn-area">
+      <!-- <button bindtap="bindButtonTap">使得输入框获取焦点</button> -->
+    </view>
+  </view>
+</view>
+</view>
