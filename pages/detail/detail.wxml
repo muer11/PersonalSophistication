@@ -1,0 +1,12 @@
+<!--pages/detail/detail.wxml-->
+<view class="detail">
+  <text class="title">迅速看透问题本质的利器——黄金思维圈</text>
+  <image src="../common/images/thought.png"></image>
+  <text class="tag">一、何为黄金思维圈？</text>
+  <text class="para">黄金思维圈，其实就是黄金圈法则。</text>
+  <text class="para">所谓黄金思维圈，其实就是我们认知世界的方法。我们看问题的三个层面——第一个层面是what层面，事情的表象，具体做的每一件事情；第二个层面是how层面，也就是如何去做这件事情；第三个层面是why层面，就是做事情的理念或者目的。</text>
+  <text class="tag">二、抓住why的本质，自然就会明白how的方法</text>
+  <text class="para">明确了我们的why，也就是明确了我们的使命、目的或信仰，这是永远不变的。如果我们的黄金圈处于均衡状态，那么，我们的how，只是去落实理念的方法和手段。</text>
+  <text class="para">当why清楚透明的时候，那些认同这个理念的人就会被吸引过来，而且很有可能要加入进来，帮我们把它实现。当一群有共同信念的人聚集在一起的时候，奇妙的事情就会发生，这也就是现在很多新兴行业创业公司成功的重要法宝。</text>
+  <text class="para">总结：黄金思维圈是一种思维方式，让我们从why出发，去探究问题的本质，是最快速透析问题根源的一把利器。</text>
+</view>

@@ -1,43 +1,46 @@
 <!--pages/today/today.wxml-->
 <view class="today">
-<view class="section">
-  <picker mode="date" value="{{date}}" start="2018-01-01" bindchange="bindDateChange">
-    <view class="picker">
-      当日: {{date}}
-    </view>
-  </picker>
-</view>
-<view>
-  今日清单：
-  <checkbox-group bindchange="checkboxChange">
-    <view wx:for="{{items}}">
-      <label class="checkbox">
-        {{item.value}}
-        <checkbox value="{{item.name}}" checked="{{item.checked}}"/>
-      </label>
-    </view>
-  </checkbox-group>
-  <button type="default">+ 添加一条今日清单</button>
-</view>
-<view>
-  小习惯：
-  <checkbox-group bindchange="checkboxChange">
-    <view wx:for="{{items}}">
-      <label class="checkbox">
-        <checkbox value="{{item.name}}" checked="{{item.checked}}"/>
-        {{item.value}}
-      </label>
-    </view>
-  </checkbox-group>
-  <button type="default">+ 添加一条小习惯</button>
-</view>
-<view>
-  反思日记：
-  <view class="section" wx:for="{{types}}">
-    <textarea placeholder="{{item.value}}" focus="{{focus}}" value="{{item.value}}:"/>
-    <view class="btn-area">
-      <!-- <button bindtap="bindButtonTap">使得输入框获取焦点</button> -->
+  <view class="date">
+    <picker mode="date" value="{{day}}" start="2018-01-01" bindchange="bindDateChange">
+      <view class="picker">
+        {{date}} ( {{day}} )
+      </view>
+    </picker>
+  </view>
+  <view class="lists">
+    <text class="title">今日清单</text>
+    <view class="group">
+      <checkbox-group bindchange="checkboxChange">
+        <view wx:for="{{todoList}}" wx:for-index="index">
+          <label class="checkbox">
+            <text class="item">{{index+1}}. {{item.value}}</text>
+            <checkbox value="{{item.name}}" checked="{{item.checked}}" color="#488dcf"/>
+            <!-- <input type="checkbox" checked="{{item.checked}}" color="#488dcf"/> -->
+          </label>
+        </view>
+      </checkbox-group>
+      <button type="default" plain="true" class="add" bindtap="addTodoList">+ 添加一条今日清单</button>
     </view>
   </view>
-</view>
+  <view class="lists">
+    <text class="title">小习惯</text>
+    <view class="group">
+      <checkbox-group bindchange="checkboxChange">
+        <view wx:for="{{habits}}" wx:for-index="index">
+          <label class="checkbox">
+            <text class="item">{{index+1}}. {{item.value}}</text>
+            <checkbox value="{{item.name}}" checked="{{item.checked}}" color="#488dcf"/>
+          </label>
+        </view>
+      </checkbox-group>
+      <button type="default" plain="true"  class="add">+ 添加一条小习惯</button>
+    </view>
+  </view>
+  <view class="lists">
+    <text class="title">反思日记</text>
+    <view class="section" wx:for="{{types}}">
+      <label class="tag">{{item.value}}:</label>
+      <textarea focus="{{focus}}" class="content"/>
+    </view>
+  </view>
 </view>

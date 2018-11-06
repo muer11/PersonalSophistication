@@ -1,6 +1,73 @@
 /* pages/today/today.wxss */
+/* common */
+.title{
+  line-height: 40px;
+}
 
 .today{
   padding: 1rem;
   font-size: 0.9rem;
+  color: #333;
+}
+
+.date{
+  border-bottom: 1px solid #dcdcdcab;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.group{
+  margin: 0 10px;
+}
+
+.lists{
+  margin-top:10px;
+}
+.lists .item{
+  display: inline-block;
+  width: 90%;
+}
+
+.checkbox{
+  line-height: 30px;
+}
+
+.checkbox input{
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid #ddd;
+  min-height: 20px !important;
+}
+
+.add{
+  border: none !important;
+  /* background: #fff !important; */
+  text-align: left;
+  font-size: 0.9rem;
+  color: #666 !important;
+  padding-left: 0;
+  /* position: inherit !important; */
+}
+
+.section{
+  margin: 0 10px;
+}
+
+.tag{
+  display: inline-block;
+  width: 18%;
+  vertical-align: top;
+  color: #666;
+  /* margin-left: 10px; */
+}
+
+.content{
+  display: inline-block;
+  width: 76%;
+  height: 60px;
+  border: 1px solid #dcdcdcab;
+  border-radius: 4px;
+  padding: 1% 2%;
 }

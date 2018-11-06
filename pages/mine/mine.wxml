@@ -1,2 +1,21 @@
 <!--pages/mine/mine.wxml-->
-<text>pages/mine/mine.wxml</text>
+<view class="mine">
+  <view class="logo">
+    <image src="../common/images/头像 女孩.png"></image>
+    <text class="text_center name">muer11</text>
+  </view>
+  <view class="block">
+    <view class="block_item">
+      <image src="../common/images/task.png"></image>
+      清 单
+    </view>
+    <view class="block_item">
+      <image src="../common/images/emoji.png"></image>
+      习 惯
+    </view>
+    <view class="block_item">
+      <image src="../common/images/setup.png"></image>
+      设 置
+    </view>
+  </view>
+</view>

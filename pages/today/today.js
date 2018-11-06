@@ -1,23 +1,27 @@
 // pages/today/today.js
+
+var util = require('../../utils/util.js');
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    items: [
-      { name: 'USA', value: '美国' },
-      { name: 'CHN', value: '中国', checked: 'true' },
-      { name: 'BRA', value: '巴西' },
-      { name: 'JPN', value: '日本' },
-      { name: 'ENG', value: '英国' },
-      { name: 'TUR', value: '法国' },
+    todoList: [
+      { name: 'dev', value: '开发' },
+      { name: 'sum', value: '总结', checked: 'true' }
+    ],
+    habits: [
+      { name: 'dev', value: '早睡' },
+      { name: 'sum', value: '早起', checked: 'true' }
     ],
     types: [
       { name: 'work', value: '工作' },
       { name: 'study', value: '学习' },
       { name: 'run', value: '运动' },
       { name: 'eat', value: '饮食' },
+      { name: 'sleep', value: '睡眠' },
       { name: 'chat', value: '社交' },
       { name: 'profession', value: '专业' },
       { name: 'habit', value: '爱好' },
@@ -28,18 +32,28 @@ Page({
   checkboxChange: function (e) {
     console.log('checkbox发生change事件，携带value值为：', e.detail.value)
   },
+  // 监听添加事件
+  addTodoList: function(e){
+    console.log(e);
+  },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    var date = util.formatDate(new Date());
+    var day = util.formatDay(new Date());
+    this.setData({
+      date: date,
+      day: day
+    });
+    console.log(day);
   },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-
+    
   },
 
   /**

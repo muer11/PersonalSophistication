@@ -1,0 +1,54 @@
+<!--pages/share/share.wxml-->
+<view class="share">
+  <view class="section">
+    <image src="../common/images/thought.png"></image>
+    <view class="section_right">
+      <text class="section_title">黄金思维圈</text>
+      <text class="section_content">迅速看透问题本质的利器</text>
+      <text class="section_date">2018-11-6</text>
+    </view>
+  </view>
+  <view class="section">
+    <navigator url="../detail/detail">
+      <image src="../common/images/thought.png"></image>
+      <view class="section_right">
+        <text class="section_title">黄金思维圈</text>
+        <text class="section_content">迅速看透问题本质的利器</text>
+        <text class="section_date">2018-11-6</text>
+      </view>
+    </navigator>
+  </view>
+  <view class="section">
+    <image src="../common/images/thought.png"></image>
+    <view class="section_right">
+      <text class="section_title">黄金思维圈</text>
+      <text class="section_content">迅速看透问题本质的利器</text>
+      <text class="section_date">2018-11-6</text>
+    </view>
+  </view>
+  <view class="section">
+    <image src="../common/images/thought.png"></image>
+    <view class="section_right">
+      <text class="section_title">黄金思维圈</text>
+      <text class="section_content">迅速看透问题本质的利器</text>
+      <text class="section_date">2018-11-6</text>
+    </view>
+  </view>
+  <view class="section">
+    <image src="../common/images/thought.png"></image>
+    <view class="section_right">
+      <text class="section_title">黄金思维圈</text>
+      <text class="section_content">迅速看透问题本质的利器</text>
+      <text class="section_date">2018-11-6</text>
+    </view>
+  </view>
+  <view class="section">
+    <image src="../common/images/thought.png"></image>
+    <view class="section_right">
+      <text class="section_title">黄金思维圈</text>
+      <text class="section_content">迅速看透问题本质的利器</text>
+      <text class="section_date">2018-11-6</text>
+    </view>
+  </view>
+  <text class="nomore">没有更多啦~</text>
+</view>

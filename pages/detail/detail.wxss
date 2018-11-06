@@ -1,0 +1,36 @@
+/* pages/detail/detail.wxss */
+
+.detail{
+  padding: 10px 20px;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+text{
+  display: block;
+}
+
+image{
+  display: block;
+  width: 300px;
+  height: 160px;
+  margin: 10px auto;
+}
+
+.title{
+  font-weight: bold;
+  text-align: center;
+  line-height: 40px;
+  margin-bottom: 20px;
+}
+
+.tag{
+  font-size: 0.8rem;
+  line-height: 30px;
+}
+
+.para{
+  text-indent: 1rem;
+  line-height: 26px;
+  font-size: 0.7rem;
+}

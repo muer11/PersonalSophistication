@@ -1,0 +1,51 @@
+/* pages/share/share.wxss */
+
+.share{
+  padding: 10px;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+image{
+  width: 80px;
+  height: 60px;
+  margin-right: 10px;
+}
+
+.section{
+  border-bottom: 1px solid #dcdcdcab;
+  padding: 10px 4px;
+}
+
+.section_right{
+  display: inline-block;
+  vertical-align: top;
+}
+
+.section_right text{
+  display: block;
+}
+
+.section_title{
+  vertical-align: top;
+}
+
+.section_content{
+  margin: 3px auto 7px;
+  font-size: 0.8rem;
+  color: #666;
+}
+
+.section_date{
+  color: #999;
+  font-size: 0.75rem;
+}
+
+.nomore{
+  display: flex;
+  color: #999;
+  text-align: center;
+  /* align-items: center; */
+  /* justify-content: ceter; */
+  line-height: 30px;
+}
