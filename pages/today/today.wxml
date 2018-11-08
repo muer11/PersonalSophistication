@@ -19,7 +19,9 @@
           </label>
         </view>
       </checkbox-group>
-      <button type="default" plain="true" class="add" bindtap="addTodoList">+ 添加一条今日清单</button>
+      <navigator url="../textarea/textarea">
+        <button type="default" plain="true" class="add" bindtap="addTodoList">+ 添加一条今日清单</button>
+      </navigator>
     </view>
   </view>
   <view class="lists">
@@ -33,14 +35,21 @@
           </label>
         </view>
       </checkbox-group>
-      <button type="default" plain="true"  class="add">+ 添加一条小习惯</button>
+      <navigator url="../textarea/textarea">
+        <button type="default" plain="true" class="add">+ 添加一条小习惯</button>
+      </navigator>
     </view>
   </view>
   <view class="lists">
     <text class="title">反思日记</text>
-    <view class="section" wx:for="{{types}}">
-      <label class="tag">{{item.value}}:</label>
-      <textarea focus="{{focus}}" class="content"/>
+    <view class="group">
+      <view class="section" wx:for="{{diary}}">
+        <label class="tag">{{item.type}}:</label>
+        <text>{{item.value}}</text>
+      </view>
+      <navigator url="../textarea/textarea">
+        <button type="default" plain="true" class="add">+ 添加一条反思日记</button>
+      </navigator>
     </view>
   </view>
 </view>

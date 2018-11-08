@@ -1,0 +1,10 @@
+<!--pages/textarea/textarea.wxml-->
+<view class="textarea">
+  <picker bindchange="changeType" value="{{index}}" range="{{types}}" range-key='value'>
+    <view class="picker">
+      类别：{{types[index].value}}
+    </view>
+  </picker>
+  <textarea class="content"></textarea>
+  <button class="submit">提交</button>
+</view>

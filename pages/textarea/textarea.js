@@ -1,21 +1,10 @@
-// pages/today/today.js
-
-var util = require('../../utils/util.js');
-var API = require('../../pages/common/js/api.js');
+// pages/textarea/textarea.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    todoList: [
-      { name: 'dev', value: '开发' },
-      { name: 'sum', value: '总结', checked: 'true' }
-    ],
-    habits: [
-      { name: 'dev', value: '早睡' },
-      { name: 'sum', value: '早起', checked: 'true' }
-    ],
     types: [
       { name: 'work', value: '工作' },
       { name: 'study', value: '学习' },
@@ -27,38 +16,23 @@ Page({
       { name: 'habit', value: '爱好' },
       { name: 'heart', value: '感情' },
       { name: 'idea', value: '灵感' },
-    ],
-    diary:[
-      { type: '工作', value: '好保持专注好保持专注好保持专注好保持专注好保持专注好保持专注好保持专注好保持专注好保持专注好保持专注好保持专注好保持专注好保持专注' },
-      { type: '学习', value: '效率提升' }
     ]
   },
-  checkboxChange: function (e) {
-    console.log('checkbox发生change事件，携带value值为：', e.detail.value)
+
+  changeType: function(e){
+    console.log('picker发送选择改变，携带值为', e.detail.value)
+    var index = e.detail.value;
+    var currentId = this.data.types[index].name; // 这个id就是选中项的id
+    this.setData({
+      index: index
+    })
   },
-  // 监听添加事件
-  addTodoList: function(e){
-    console.log(e);
-    // this.todoList.push()
-  },
+
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    var date = util.formatDate(new Date());
-    var day = util.formatDay(new Date());
-    this.setData({
-      date: date,
-      day: day
-    });
-    console.log(day);
-    var that = this;
-    API.ajax('', function(res){
-      console.log(res);
-      that.setData({
-        list: res.data
-      })
-    })
+
   },
 
   /**

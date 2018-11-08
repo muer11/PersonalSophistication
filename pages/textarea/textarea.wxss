@@ -1,0 +1,27 @@
+/* pages/textarea/textarea.wxss */
+
+.textarea{
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.picker{
+  line-height: 30px;
+}
+
+.content{
+  border: 1px solid #dcdcdcab;
+  width: 96%;
+  margin: 10px auto 20px;
+  padding: 2%;
+  border-radius: 4px;
+}
+
+.submit{
+  width: 40%;
+  margin: 0 auto;
+  color: #fff;
+  border: 1px solid #488dcf !important;
+  background: #488dcf;
+}

@@ -1,6 +1,7 @@
 {
   "pages": [
     "pages/today/today",
+    "pages/textarea/textarea",
     "pages/detail/detail",
     "pages/mine/mine",
     "pages/share/share",
@@ -12,7 +13,7 @@
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
+    "navigationBarTitleText": "个人精进日志",
     "navigationBarTextStyle": "black"
   },
   "tabBar": {

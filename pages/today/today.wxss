@@ -43,24 +43,32 @@
 
 .add{
   border: none !important;
-  /* background: #fff !important; */
   text-align: left;
-  font-size: 0.9rem;
+  font-size: 0.7rem;
   color: #666 !important;
   padding-left: 0;
-  /* position: inherit !important; */
 }
 
 .section{
-  margin: 0 10px;
+  margin: 0 10px 10px 0;
+  display: flex;
+  justify-content: left;
+  align-items: flex-start;
 }
 
 .tag{
-  display: inline-block;
-  width: 18%;
   vertical-align: top;
   color: #666;
-  /* margin-left: 10px; */
+  font-size: 0.75rem;
+  margin-right: 10px;
+  flex: 1;
+}
+
+.section text{
+  flex: 6;
+  font-size: 0.7rem;
+  line-height: 22px;
+  vertical-align: text-top;
 }
 
 .content{
